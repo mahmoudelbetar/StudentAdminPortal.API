@@ -1,6 +1,6 @@
-﻿namespace StudentAdminPortal.API.Models
+﻿namespace StudentAdminPortal.API.Dtos
 {
-    public class Student
+    public class StudentDto
     {
         public Guid Id { get; set; }
         public string FirstName { get; set; }
@@ -10,7 +10,7 @@
         public DateTime DateOfBirth { get; set; }
         public string? ProfilePictureUrl { get; set; }
         public Guid GenderId { get; set; }
-        public Gender Gender { get; set; }
-        public Address Address { get; set; }
+        public GenderDto Gender { get; set; }
+        public AddressDto Address { get; set; }
     }
 }
